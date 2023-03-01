@@ -1,6 +1,8 @@
 (function (App) {
     'use strict';
 
+    var netw = require('network-address');
+
     const ChromecastAPI = require('chromecast-api'),
           client = new ChromecastAPI(),
           collection = App.Device.Collection;
@@ -19,7 +21,7 @@
             this.device = attrs.device;
             this.attributes.id = this._makeID(this.device.name);
             this.attributes.name = this.device.friendlyName;
-            this.attributes.address = this.device.host;
+            this.attributes.address = netw();
             this.updatingSubtitles = false;
         },
 

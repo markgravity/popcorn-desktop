@@ -551,5 +551,9 @@
 	"Already using the latest version": "Already using the latest version",
 	"Stored in local database as encrypted MD5 hash": "Stored in local database as encrypted MD5 hash",
 	"link": "link",
-	"version number": "version number"
+	"version number": "version number",
+	"Trending": "Trending",
+	"Popularity": "Popularity",
+	"Last Added": "Last Added",
+	"Health Medium": "Health Medium"
 }
